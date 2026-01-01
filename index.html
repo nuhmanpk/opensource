@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nuhman PK - Open Source Developer & Creator. Explore my portfolio of Python libraries, VS Code extensions, AI tools, and open-source projects.">
+    <meta name="author" content="Nuhman PK">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nuhman PK - Open Source Portfolio">
+    <meta property="og:description"
+        content="Open Source Developer & Creator specializing in Python libraries, VS Code extensions, and AI tools">
+    <meta property="og:type" content="website">
+
+    <title>Nuhman PK - Open Source Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-metrics.css">
+</head>
+
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-animation"></div>
+    <div class="hidden-words-container" id="hidden-words"></div>
+    <div class="mouse-spotlight"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="wave">👋</span> Hi, I'm <span class="gradient-text">Nuhman PK</span>
+                </h1>
+                <p class="hero-subtitle">Open Source Developer & Creator</p>
+                <p class="hero-description">
+                    Building powerful tools and libraries that developers love.
+                    From Python packages to VS Code extensions, I create solutions that simplify workflows.
+                </p>
+
+                <!-- Quick GitHub Stats -->
+                <div class="quick-stats">
+                    <a href="https://github.com/nuhmanpk" target="_blank" rel="noopener" class="stat-card"
+                        id="stat-github">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">GitHub Profile</div>
+                            <div class="stat-value">@nuhmanpk</div>
+                        </div>
+                    </a>
+                    <div class="stat-card" id="stat-downloads">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Total Users</div>
+                            <div class="stat-value" id="stat-downloads-value">250k+</div>
+                        </div>
+                    </div>
+                    <div class="stat-card" id="stat-projects">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Projects</div>
+                            <div class="stat-value">11+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Dashboard Section -->
+    <section id="github-dashboard" class="dashboard">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">GitHub</span> Metrics
+            </h2>
+
+            <div class="dashboard-grid">
+                <!-- Custom Profile Stats Card -->
+                <div class="dashboard-card" id="stats-card">
+                    <h3 class="card-title">Profile Statistics</h3>
+                    <div class="stats-grid-custom">
+                        <div class="stat-item">
+                            <div class="stat-icon-small">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="stat-detail">
+                                <span class="stat-label">Total Stars</span>
+                                <span class="stat-number">900+</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon-small">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="6" y1="3" x2="6" y2="15"></line>
+                                    <circle cx="18" cy="6" r="3"></circle>
+                                    <circle cx="6" cy="18" r="3"></circle>
+                                    <path d="M18 9a9 9 0 0 1-9 9"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-detail">
+                                <span class="stat-label">Total Forks</span>
+                                <span class="stat-number">88+</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon-small">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-detail">
+                                <span class="stat-label">Followers</span>
+                                <span class="stat-number">149+</span>
+                            </div>
+                        </div>
+                        <!-- code reviews -->
+                        <div class="stat-item">
+                            <div class="stat-icon-small">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-detail">
+                                <span class="stat-label">Code Reviews</span>
+                                <span class="stat-number">149+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-joined">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Joined Sep 2, 2021
+                    </div>
+                </div>
+
+                <!-- Custom Streak Card (Static/Estimated) -->
+                <div class="dashboard-card" id="streak-card">
+                    <h3 class="card-title">Contribution Streak</h3>
+                    <div class="streak-container">
+                        <div class="streak-circle">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg"
+                                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="85, 100"
+                                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="streak-content">
+                                <span class="streak-icon">🔥</span>
+                                <span class="streak-number">64</span>
+                                <span class="streak-label">Days</span>
+                            </div>
+                        </div>
+                        <div class="streak-meta">
+                            <div class="streak-meta-item">
+                                <span class="label">Total</span>
+                                <span class="value">3,587</span>
+                            </div>
+                            <div class="streak-meta-item">
+                                <span class="label">Current</span>
+                                <span class="value">Jan 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Top Languages Card -->
+                <div class="dashboard-card" id="languages-card">
+                    <h3 class="card-title">Top Languages</h3>
+                    <div class="languages-list">
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-name">Python</span>
+                                <span class="lang-percent">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%; background-color: #3572A5;"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-name">JavaScript</span>
+                                <span class="lang-percent">15%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 15%; background-color: #f1e05a;"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-name">HTML/CSS</span>
+                                <span class="lang-percent">8%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 8%; background-color: #e34c26;"></div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-name">Other</span>
+                                <span class="lang-percent">2%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 2%; background-color: #ededed;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>!-- Contribution Graph -->
+                <div class="dashboard-card full-width" id="contribution-card">
+                    <h3 class="card-title">Contribution Activity</h3>
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=nuhmanpk&theme=tokyo-night&hide_border=true&bg_color=00000000&color=a78bfa&line=60a5fa&point=f472b6&area=true&area_color=a78bfa"
+                        alt="Contribution Graph" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Projects</span> Showcase
+            </h2>
+
+            <!-- Category Filters -->
+            <div class="filters" id="category-filters">
+                <!-- Dynamically generated by JavaScript -->
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamically generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Nuhman PK</h3>
+                    <p class="footer-text">Open Source Developer & Creator</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://github.com/nuhmanpk" target="_blank" rel="noopener" class="footer-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://pypi.org/user/nuhmanpk/" target="_blank" rel="noopener" class="footer-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.4c5.302 0 9.6 4.298 9.6 9.6s-4.298 9.6-9.6 9.6S2.4 17.302 2.4 12 6.698 2.4 12 2.4zm-1.2 4.8v3.6H7.2v2.4h3.6v3.6h2.4v-3.6h3.6v-2.4h-3.6V7.2h-2.4z" />
+                        </svg>
+                        PyPI
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nuhman PK. Built with ❤️ for the open source community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data/projects.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
